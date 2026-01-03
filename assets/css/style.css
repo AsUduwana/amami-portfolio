@@ -1928,3 +1928,5 @@ textarea.form-input::-webkit-resizer { display: none; }
   text-overflow: clip;        /* remove ... */
   word-break: break-all;      /* break long strings if needed */
 }
+
+
