@@ -206,7 +206,8 @@ article {
   z-index: -1;
 }
 
-.icon-box ion-icon { --ionicon-stroke-width: 35px; }
+.icon-box ion-icon { --ionicon-stroke-width: 35px;
+ }
 
 article { display: none; }
 
@@ -1065,6 +1066,7 @@ main {
   height: 200px;
   border-radius: 12px;
   overflow: hidden;
+  
 }
 
 .blog-banner-box img {
@@ -1072,6 +1074,7 @@ main {
   height: 100%;
   object-fit: cover;
   transition: var(--transition-1);
+  
 }
 
 .blog-post-item > a:hover .blog-banner-box img { transform: scale(1.1); }
@@ -1879,4 +1882,49 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-text { max-width: 700px; }
 
+}
+
+.multi-img-box{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.multi-img-box img{
+  width: 100%;
+  border-radius: 8px;
+}
+.interest-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.interest-btn {
+  background: #1f1f1f;
+  color: #ffd94a;           /* yellow font */
+  border: 1px solid #ffd94a;
+  padding: 10px 18px;
+  border-radius: 999px;     /* pill shape */
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.interest-btn:hover {
+  background: #ffd94a;
+  color: #000;
+  transform: translateY(-2px);
+}
+/* Make contact details (like email) fully visible */
+.contacts-list .contact-info {
+  max-width: 100%;
+}
+
+.contacts-list .contact-link {
+  white-space: normal;        /* allow wrapping */
+  overflow: visible;          /* don't hide overflow */
+  text-overflow: clip;        /* remove ... */
+  word-break: break-all;      /* break long strings if needed */
 }
